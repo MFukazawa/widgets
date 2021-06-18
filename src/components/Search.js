@@ -31,19 +31,19 @@ const Search = () => {
     };
   }, [term]);
 
-  const [test, setTest] = useState('');
-  console.log('I run with every render');
-  useEffect(() => {
-    console.log('I ONLY RUN ONCE');
-  }, []);
-  useEffect(() => {
-    console.log('I run at initial render and after rerender ');
-  });
-  useEffect(() => {
-    console.log(
-      'I run at initial render AND after rerender if data has changed since last rerender'
-    );
-  }, [test]);
+  // const [test, setTest] = useState('');
+  // console.log('I run with every render');
+  // useEffect(() => {
+  //   console.log('I ONLY RUN ONCE');
+  // }, []);
+  // useEffect(() => {
+  //   console.log('I run at initial render and after rerender ');
+  // });
+  // useEffect(() => {
+  //   console.log(
+  //     'I run at initial render AND after rerender if data has changed since last rerender'
+  //   );
+  // }, [test]);
 
   const renderedResults = results.map((result) => {
     return (
